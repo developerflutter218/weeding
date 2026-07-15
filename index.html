@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Abdelrahman & Nouran Wedding Invitation</title>
+    
+    <!-- Added elegant golden heart Favicon for the browser tab -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M50 85s-35-24-35-45c0-12 9-20 20-20 9 0 15 8 15 8s6-8 15-8c11 0 20 8 20 20 0 21-35 45-35 45z' fill='%23B59B6D'/%3E%3C/svg%3E">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Kept elegant serif (Playfair) and clean caps (Montserrat) -->
+    <link href="https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        signature: ['"Herr Von Muellerhoff"', 'cursive'],
+                        sans: ['Montserrat', 'sans-serif'],
+                    },
+                    colors: {
+                        gold: '#B59B6D',
+                        'gold-dark': '#8c7650',
+                        paper: '#F4EFE6',
+                        ink: '#1A1A1A',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom Damask/Floral Vintage Background */
+        body {
+            background-color: #F4EFE6;
+            background-image: url("data:image/svg+xml,%3Csvg width='120' height='120' viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23e4dbcb' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M11.105 17.518C12.44 19.5 15.655 21 19 21c3.344 0 6.56-1.5 7.895-3.482l.805 1.547c-1.616 2.502-5.405 4.102-8.7 4.102-3.296 0-7.085-1.6-8.7-4.102l.805-1.547zm97.79 0c1.335 1.982 4.55 3.482 7.895 3.482s6.56-1.5 7.895-3.482l.805 1.547c-1.616 2.502-5.405 4.102-8.7 4.102-3.296 0-7.085-1.6-8.7-4.102l.805-1.547zM60 41c-3.344 0-6.56-1.5-7.895-3.482l-.805 1.547c1.616 2.502 5.405 4.102 8.7 4.102 3.296 0 7.085-1.6 8.7-4.102l-.805-1.547C66.56 39.5 63.344 41 60 41zM11.105 77.518C12.44 79.5 15.655 81 19 81c3.344 0 6.56-1.5 7.895-3.482l.805 1.547c-1.616 2.502-5.405 4.102-8.7 4.102-3.296 0-7.085-1.6-8.7-4.102l.805-1.547zm97.79 0c1.335 1.982 4.55 3.482 7.895 3.482s6.56-1.5 7.895-3.482l.805 1.547c-1.616 2.502-5.405 4.102-8.7 4.102-3.296 0-7.085-1.6-8.7-4.102l.805-1.547zM60 101c-3.344 0-6.56-1.5-7.895-3.482l-.805 1.547c1.616 2.502 5.405 4.102 8.7 4.102 3.296 0 7.085-1.6 8.7-4.102l-.805-1.547C66.56 99.5 63.344 101 60 101zM29.5 28c1.38 0 2.5-1.12 2.5-2.5s-1.12-2.5-2.5-2.5-2.5 1.12-2.5 2.5 1.12 2.5 2.5 2.5zM89.5 28c1.38 0 2.5-1.12 2.5-2.5s-1.12-2.5-2.5-2.5-2.5 1.12-2.5 2.5 1.12 2.5 2.5 2.5zM29.5 88c1.38 0 2.5-1.12 2.5-2.5s-1.12-2.5-2.5-2.5-2.5 1.12-2.5 2.5 1.12 2.5 2.5 2.5zM89.5 88c1.38 0 2.5-1.12 2.5-2.5s-1.12-2.5-2.5-2.5-2.5 1.12-2.5 2.5 1.12 2.5 2.5 2.5zM60 58c1.38 0 2.5-1.12 2.5-2.5s-1.12-2.5-2.5-2.5-2.5 1.12-2.5 2.5 1.12 2.5 2.5 2.5z'/%3E%3C/g%3E%3C/svg%3E");
+            color: #1A1A1A;
+            overflow-x: hidden;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        ::selection { background-color: #B59B6D; color: white; }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .animate-fade-in-up {
+            opacity: 0;
+            animation: fadeInUp 1s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+        }
+
+        /* Envelope specific styles */
+        .envelope-flap-closed { clip-path: polygon(0 0, 100% 0, 50% 60%); }
+        .envelope-pocket-left { clip-path: polygon(0 0, 50% 50%, 0 100%); }
+        .envelope-pocket-right { clip-path: polygon(100% 0, 100% 100%, 50% 50%); }
+        .envelope-pocket-bottom { clip-path: polygon(0 100%, 50% 50%, 100% 100%); }
+
+        /* Custom Scrollbar for elegant feel */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: rgba(181, 155, 109, 0.3); border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: rgba(181, 155, 109, 0.6); }
+
+        /* Custom SVG Background for Countdown */
+        .countdown-plaque {
+            background-image: url("data:image/svg+xml,%3Csvg preserveAspectRatio='none' viewBox='0 0 400 150' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30,5 C30,5 20,5 15,15 C10,25 5,30 5,40 L5,110 C5,120 10,125 15,135 C20,145 30,145 30,145 L370,145 C370,145 380,145 385,135 C390,125 395,120 395,110 L395,40 C395,30 390,25 385,15 C380,5 370,5 370,5 Z' fill='%23EDE5D6' stroke='%23C3AD86' stroke-width='3'/%3E%3Cpath d='M32,9 C32,9 24,9 20,17 C16,25 9,32 9,40 L9,110 C9,118 16,125 20,133 C24,141 32,141 32,141 L368,141 C368,141 376,141 380,133 C384,125 391,118 391,110 L391,40 C391,32 384,25 380,17 C376,9 368,9 368,9 Z' fill='none' stroke='%23C3AD86' stroke-width='0.75' opacity='0.7'/%3E%3C/svg%3E");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="antialiased font-sans">
+
+    <!-- Background Music Audio Element -->
+    <audio id="bg-music" loop>
+        <source src="assets/wedding-music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Floating Music Toggle Button -->
+    <button id="music-toggle" class="fixed bottom-6 right-6 z-[100] bg-gold/90 text-white p-3 sm:p-4 rounded-full shadow-lg backdrop-blur-sm hover:bg-gold-dark transition-all duration-300 flex items-center justify-center border border-white/20">
+        <!-- Play Icon (Visible by default until playing) -->
+        <svg id="music-icon-play" class="w-6 h-6 sm:w-7 sm:h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+        </svg>
+        <!-- Pause Icon (Hidden by default) -->
+        <svg id="music-icon-pause" class="w-6 h-6 sm:w-7 sm:h-7 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 9v6m4-6v6m7-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+        </svg>
+    </button>
+
+    <!-- Helper to inject the golden floral ornament seen in the images -->
+    <svg style="display: none;">
+        <symbol id="floral-ornament" viewBox="0 0 300 40">
+            <g fill="none" stroke="#B59B6D" stroke-width="1.5">
+                <!-- Center Flower -->
+                <path d="M150,10 Q145,20 150,30 Q155,20 150,10" fill="#B59B6D" opacity="0.6"/>
+                <path d="M145,20 Q150,15 155,20 Q150,25 145,20" fill="#B59B6D" opacity="0.6"/>
+                <!-- Left Swirls -->
+                <path d="M140,20 C120,20 110,10 90,15 C70,20 60,35 40,20 C25,10 10,20 10,20" />
+                <path d="M130,22 C115,22 105,30 85,25 C70,20 65,10 50,15" />
+                <!-- Right Swirls -->
+                <path d="M160,20 C180,20 190,10 210,15 C230,20 240,35 260,20 C275,10 290,20 290,20" />
+                <path d="M170,22 C185,22 195,30 215,25 C230,20 235,10 250,15" />
+                <!-- Leaves Left -->
+                <path d="M110,14 C112,10 118,10 120,12 C118,16 112,16 110,14" fill="#B59B6D"/>
+                <path d="M70,24 C68,28 62,28 60,26 C62,22 68,22 70,24" fill="#B59B6D"/>
+                <!-- Leaves Right -->
+                <path d="M190,14 C188,10 182,10 180,12 C182,16 188,16 190,14" fill="#B59B6D"/>
+                <path d="M230,24 C232,28 238,28 240,26 C238,22 232,22 230,24" fill="#B59B6D"/>
+            </g>
+        </symbol>
+    </svg>
+
+    <div id="envelope-view" class="fixed inset-0 flex flex-col items-center justify-center z-50 transition-all duration-[1200ms] ease-in-out bg-[#F4EFE6] bg-opacity-90 backdrop-blur-sm px-4">
+        
+        <!-- Top Text -->
+        <div class="text-center mb-10 sm:mb-14 flex flex-col items-center animate-fade-in-up" style="animation-delay: 0.1s">
+            <svg class="mb-4 w-4/5 max-w-[240px] h-auto"><use href="#floral-ornament"/></svg>
+            <h1 class="font-serif text-xl sm:text-2xl md:text-3xl tracking-[0.2em] text-ink uppercase font-semibold">
+                Come Celebrate With Us
+            </h1>
+            <svg class="mt-4 w-4/5 max-w-[240px] h-auto"><use href="#floral-ornament"/></svg>
+        </div>
+
+        <!-- Envelope (Fluid and responsive using aspect ratio) -->
+        <div id="envelope-wrapper" class="relative w-[90vw] max-w-[420px] aspect-[1.46] cursor-pointer transition-transform duration-500 hover:scale-[1.03]" onclick="openEnvelope()">
+            
+            <!-- Envelope Body (Back) -->
+            <div class="absolute inset-0 bg-[#E8E1D5] rounded-sm shadow-xl border border-white/20"></div>
+
+            <!-- The Letter inside the envelope -->
+            <div id="envelope-letter" class="absolute left-2 right-2 bottom-2 top-2 bg-[#F9F7F2] rounded-sm transition-all duration-[1200ms] ease-in-out z-10 flex flex-col items-center justify-start pt-4 sm:pt-6 border border-[#e0d6c8] shadow-inner translate-y-0 opacity-100">
+                
+                <!-- Updated from circle to local assets rectangular image -->
+                <div class="w-24 h-32 sm:w-32 sm:h-40 rounded-lg border-[3px] border-[#F9F7F2] shadow-sm mb-3 overflow-hidden bg-[#E8E1D5]">
+                    <img src="assets/couple.jpg" alt="Couple" class="w-full h-full object-cover object-center" />
+                </div>
+                
+                <div class="w-3/4 h-[2px] bg-gold opacity-40 mb-2"></div>
+                <div class="w-1/2 h-[2px] bg-gold opacity-30"></div>
+            </div>
+
+            <!-- Envelope Front Pockets -->
+            <div class="absolute inset-0 bg-[#F2ECE1] z-20 envelope-pocket-left drop-shadow-md border-r border-white/30"></div>
+            <div class="absolute inset-0 bg-[#F2ECE1] z-20 envelope-pocket-right drop-shadow-md border-l border-white/30"></div>
+            <div class="absolute inset-0 bg-[#EBE4D7] z-30 envelope-pocket-bottom drop-shadow-lg border-t border-white/40"></div>
+
+            <!-- Envelope Flap (Top) -->
+            <div id="envelope-flap" class="absolute top-0 left-0 w-full h-[100%] bg-[#F4EFE6] z-40 origin-top transition-transform duration-[800ms] ease-in-out envelope-flap-closed drop-shadow-xl border-b border-black/5" style="transform: rotateX(0deg);">
+                
+                <!-- Wax Seal -->
+                <div id="wax-seal" class="absolute top-[58%] left-[50%] -translate-x-1/2 -translate-y-1/2 w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-gradient-to-br from-[#2a2a2a] to-[#0a0a0a] shadow-[0_4px_10px_rgba(0,0,0,0.5),inset_0_2px_4px_rgba(255,255,255,0.2)] flex items-center justify-center transition-opacity duration-300 z-50 cursor-pointer border border-[#333]">
+                    <div class="absolute inset-[2px] rounded-full border border-gold/30"></div>
+                    <span class="font-signature text-gold text-3xl sm:text-4xl font-normal leading-none pt-2 pr-1 drop-shadow-md">AN</span>
+                </div>
+            </div>
+        </div>
+
+        <p id="tap-text" class="mt-12 sm:mt-16 font-serif text-sm sm:text-base tracking-[0.25em] text-gray-600 transition-opacity duration-300 opacity-100 uppercase font-semibold">
+            Tap to open...
+        </p>
+    </div>
+
+    <div id="invitation-view" class="hidden w-full max-w-2xl mx-auto min-h-screen relative z-10 flex-col items-center pb-24 px-4 sm:px-8 overflow-hidden">
+        
+        <!-- Back Button -->
+        <button onclick="closeEnvelope()" class="mt-6 sm:mt-10 mb-4 sm:mb-8 text-xs sm:text-sm tracking-[0.25em] font-sans text-gray-500 hover:text-ink transition-colors underline underline-offset-4 animate-fade-in-up uppercase z-50 font-semibold">
+            Click to go back
+        </button>
+
+        <!-- Main Card Content Area -->
+        <div class="w-full flex flex-col items-center relative">
+            
+            <!-- Top Envelope Flap Illusion -->
+            <div class="relative w-[110%] h-48 sm:h-56 md:h-72 -ml-[5%] flex justify-center items-start mb-6 sm:mb-10 animate-fade-in-up" style="animation-delay: 0.1s">
+                <div class="absolute top-0 w-full h-full bg-[#F9F7F2] shadow-sm border-b border-black/5" style="clip-path: polygon(0 0, 100% 0, 50% 100%)"></div>
+                
+                <!-- Main Image - Updated to use local asset and standard rounded corners -->
+                <div class="relative z-10 mt-6 sm:mt-8 md:mt-10">
+                    <img src="assets/couple.jpg" alt="Couple" class="w-36 h-48 sm:w-48 sm:h-64 md:w-56 md:h-72 object-cover object-center shadow-xl border-[6px] sm:border-[8px] border-[#F9F7F2] rounded-2xl" />
+                </div>
+            </div>
+
+            <!-- Names Section - Updated fonts to normal (serif) and increased sizes -->
+            <div class="text-center w-full animate-fade-in-up flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-6 mt-4 sm:mt-8 mb-6" style="animation-delay: 0.2s">
+                <h2 class="font-serif text-5xl sm:text-6xl md:text-7xl text-ink font-semibold">Abdelrahman</h2>
+                <span class="font-serif text-3xl sm:text-4xl md:text-5xl italic text-ink/80 my-2 sm:my-0">&</span>
+                <h2 class="font-serif text-5xl sm:text-6xl md:text-7xl text-ink font-semibold">Nouran</h2>
+            </div>
+
+            <div class="animate-fade-in-up w-full flex justify-center my-6 sm:my-8" style="animation-delay: 0.3s">
+                <svg class="w-3/4 max-w-[260px] h-auto"><use href="#floral-ornament"/></svg>
+            </div>
+
+            <!-- Date and Time - Increased text sizes -->
+            <div class="text-center font-serif text-ink animate-fade-in-up my-4" style="animation-delay: 0.4s">
+                <p class="text-xl sm:text-2xl md:text-3xl font-bold tracking-widest uppercase">4th of September</p>
+                <div class="flex items-center justify-center gap-3 sm:gap-4 my-4 sm:my-5">
+                    <span class="w-10 sm:w-16 h-[1px] bg-gold opacity-60"></span>
+                    <span class="text-lg sm:text-xl md:text-2xl tracking-[0.2em] font-semibold">2026</span>
+                    <span class="w-10 sm:w-16 h-[1px] bg-gold opacity-60"></span>
+                </div>
+                <p class="text-lg sm:text-xl md:text-2xl tracking-wider">AT 8 PM</p>
+            </div>
+
+            <!-- Location - Increased text sizes -->
+            <div class="text-center font-serif text-xl sm:text-2xl md:text-3xl leading-loose text-ink mt-6 sm:mt-10 mb-8 sm:mb-12 animate-fade-in-up" style="animation-delay: 0.5s">
+                <p class="font-bold">Nile Flori</p>
+                <p>Nile Corniche</p>
+                <p>Maadi</p>
+            </div>
+
+            <div class="animate-fade-in-up w-full flex justify-center my-6 sm:my-10" style="animation-delay: 0.6s">
+                <svg class="w-3/4 max-w-[260px] h-auto"><use href="#floral-ornament"/></svg>
+            </div>
+
+            <!-- Countdown Title -->
+            <div class="w-full animate-fade-in-up flex flex-col items-center mt-6 sm:mt-8 px-2" style="animation-delay: 0.7s">
+                <h3 class="font-serif text-3xl sm:text-4xl md:text-5xl italic text-center mb-6 sm:mb-10 text-ink font-bold">
+                    Counting Down to Our Day
+                </h3>
+                
+                <div class="w-full flex justify-center mb-6 sm:mb-8">
+                    <svg class="w-2/3 max-w-[240px] h-auto opacity-80"><use href="#floral-ornament"/></svg>
+                </div>
+
+                <!-- Custom Plaque Shape for Timer - Increased sizes -->
+                <div class="countdown-plaque w-full max-w-[460px] h-[140px] sm:h-[180px] flex flex-col items-center justify-center shadow-xl relative bg-[#F9F7F2]/40 backdrop-blur-sm px-2">
+                    <div class="text-4xl sm:text-5xl md:text-6xl font-serif text-ink tracking-widest flex justify-center gap-1 sm:gap-3 mb-2 sm:mb-4 mt-2 sm:mt-4 font-semibold w-full">
+                        <span id="timer-days" class="w-12 sm:w-16 text-center">00</span><span class="text-gold">:</span>
+                        <span id="timer-hours" class="w-12 sm:w-16 text-center">00</span><span class="text-gold">:</span>
+                        <span id="timer-mins" class="w-12 sm:w-16 text-center">00</span><span class="text-gold">:</span>
+                        <span id="timer-secs" class="w-12 sm:w-16 text-center">00</span>
+                    </div>
+                    <div class="flex justify-center gap-3 sm:gap-6 md:gap-8 text-[10px] sm:text-xs md:text-sm font-sans tracking-[0.2em] sm:tracking-[0.25em] text-ink font-bold pl-1 sm:pl-3 w-full">
+                        <span class="w-12 sm:w-16 text-center">DAYS</span>
+                        <span class="w-12 sm:w-16 text-center">HOURS</span>
+                        <span class="w-12 sm:w-16 text-center">MINS</span>
+                        <span class="w-12 sm:w-16 text-center">SECS</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="animate-fade-in-up w-full flex justify-center my-10 sm:my-14" style="animation-delay: 0.8s">
+                <svg class="w-3/4 max-w-[260px] h-auto"><use href="#floral-ornament"/></svg>
+            </div>
+
+            <!-- Map Section -->
+            <div class="w-full animate-fade-in-up flex flex-col items-center px-2" style="animation-delay: 0.9s">
+                <h3 class="font-serif text-3xl sm:text-4xl md:text-5xl italic text-center mb-6 sm:mb-10 text-ink font-bold">
+                    Getting There
+                </h3>
+                
+                <div class="w-full flex justify-center mb-6 sm:mb-8">
+                    <svg class="w-2/3 max-w-[240px] h-auto opacity-80"><use href="#floral-ornament"/></svg>
+                </div>
+
+                <!-- Map Container -->
+                <div class="w-full max-w-[460px] h-72 sm:h-80 md:h-96 bg-white p-3 md:p-4 shadow-xl border border-[#E8E1D5] transform rotate-1 hover:rotate-0 transition-transform duration-300">
+                    <iframe
+                        title="Location Map"
+                        src="https://maps.google.com/maps?q=Nile%20Flori,%20Maadi,%20Cairo&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                        width="100%"
+                        height="100%"
+                        style="border: 0; filter: contrast(1.1) opacity(0.9);"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                </div>
+            </div>
+
+            <div class="animate-fade-in-up w-full flex justify-center my-10 sm:my-14" style="animation-delay: 1.0s">
+                <svg class="w-3/4 max-w-[260px] h-auto"><use href="#floral-ornament"/></svg>
+            </div>
+
+            <!-- Message Form Section - Increased sizes -->
+            <div class="w-full px-4 animate-fade-in-up flex flex-col items-center" style="animation-delay: 1.1s">
+                <h3 class="font-serif text-3xl sm:text-4xl md:text-5xl italic text-center mb-8 sm:mb-12 text-ink font-bold">
+                    Leave Us a Message
+                </h3>
+                
+                <form id="rsvp-form" class="flex flex-col gap-6 sm:gap-8 w-full max-w-[460px] relative">
+                    <div class="relative">
+                        <input 
+                            type="text" 
+                            id="guest-name"
+                            placeholder="Your Name" 
+                            required
+                            class="w-full p-3 sm:p-4 bg-transparent border-b-2 border-gold/40 outline-none focus:border-gold transition-colors text-ink placeholder:text-ink/50 font-serif italic text-xl sm:text-2xl" 
+                        />
+                    </div>
+                    <div class="relative">
+                        <textarea 
+                            id="guest-message"
+                            placeholder="Write your wishes here..." 
+                            rows="4" 
+                            required
+                            class="w-full p-3 sm:p-4 bg-transparent border-b-2 border-gold/40 outline-none focus:border-gold transition-colors resize-none text-ink placeholder:text-ink/50 font-serif italic text-xl sm:text-2xl"
+                        ></textarea>
+                    </div>
+                    <button 
+                        type="submit" 
+                        class="mt-6 bg-[#2A2A2A] text-[#F9F7F2] py-4 sm:py-5 px-8 sm:px-10 rounded-sm uppercase tracking-[0.2em] text-sm sm:text-base font-bold hover:bg-gold transition-colors shadow-lg self-center border border-[#111] w-full sm:w-auto"
+                    >
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Modal -->
+    <div id="custom-modal" class="fixed inset-0 z-[100] hidden items-center justify-center bg-black/50 backdrop-blur-sm opacity-0 transition-opacity duration-300 px-4">
+        <div class="bg-[#F9F7F2] p-8 sm:p-10 max-w-md w-full text-center border-2 border-gold shadow-2xl transform scale-95 transition-transform duration-300" id="modal-content">
+            <svg class="w-14 h-14 sm:w-16 sm:h-16 mx-auto text-gold mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+            <h4 class="font-serif text-3xl sm:text-4xl italic text-ink mb-4 font-bold">Thank You!</h4>
+            <p class="font-sans text-base sm:text-lg text-ink/80 mb-8 leading-relaxed">Your beautiful message has been received.</p>
+            <button onclick="closeModal()" class="bg-gold text-white px-8 py-3 text-sm sm:text-base font-bold tracking-widest uppercase hover:bg-gold-dark transition-colors w-full sm:w-auto">Close</button>
+        </div>
+    </div>
+
+    <script>
+        // DOM Elements
+        const envelopeView = document.getElementById('envelope-view');
+        const invitationView = document.getElementById('invitation-view');
+        const envelopeWrapper = document.getElementById('envelope-wrapper');
+        const flap = document.getElementById('envelope-flap');
+        const letter = document.getElementById('envelope-letter');
+        const waxSeal = document.getElementById('wax-seal');
+        const tapText = document.getElementById('tap-text');
+        
+        // Music Elements
+        const audio = document.getElementById('bg-music');
+        const musicBtn = document.getElementById('music-toggle');
+        const iconPlay = document.getElementById('music-icon-play');
+        const iconPause = document.getElementById('music-icon-pause');
+        
+        let isOpen = false;
+        let isMusicPlaying = false;
+
+        // Toggle Music Function
+        function toggleMusic() {
+            if (isMusicPlaying) {
+                audio.pause();
+                iconPause.classList.add('hidden');
+                iconPlay.classList.remove('hidden');
+            } else {
+                audio.play().catch(e => console.log("Audio play failed:", e));
+                iconPlay.classList.add('hidden');
+                iconPause.classList.remove('hidden');
+            }
+            isMusicPlaying = !isMusicPlaying;
+        }
+
+        // Attach listener to music button
+        musicBtn.addEventListener('click', toggleMusic);
+
+        function openEnvelope() {
+            if (isOpen) return;
+            isOpen = true;
+
+            // Start music immediately upon user interaction if not already playing!
+            if (!isMusicPlaying) {
+                audio.play().then(() => {
+                    isMusicPlaying = true;
+                    iconPlay.classList.add('hidden');
+                    iconPause.classList.remove('hidden');
+                }).catch(err => console.log("Auto-play blocked by browser:", err));
+            }
+
+            // 1. Initial click state: Remove hover, lock clicks
+            envelopeWrapper.classList.remove('hover:scale-[1.03]');
+            envelopeWrapper.classList.add('scale-[1.05]', 'pointer-events-none');
+            tapText.classList.replace('opacity-100', 'opacity-0');
+            
+            // 2. Open flap & hide seal
+            flap.style.transform = 'rotateX(180deg)';
+            waxSeal.style.opacity = '0';
+            
+            // 3. Slide letter out dramatically
+            setTimeout(() => {
+                letter.classList.replace('translate-y-0', '-translate-y-[110%]');
+                letter.classList.add('scale-110');
+            }, 600);
+
+            // 4. Smoothly fade out
+            setTimeout(() => {
+                envelopeView.style.opacity = '0';
+            }, 1800);
+
+            // 5. Swap display views
+            setTimeout(() => {
+                envelopeView.classList.add('hidden');
+                envelopeView.classList.remove('flex');
+                
+                invitationView.classList.remove('hidden');
+                invitationView.classList.add('flex');
+                
+                window.scrollTo(0, 0);
+            }, 3000); 
+        }
+
+        function closeEnvelope() {
+            isOpen = false;
+            
+            invitationView.classList.add('hidden');
+            invitationView.classList.remove('flex');
+            
+            envelopeView.classList.remove('hidden');
+            envelopeView.classList.add('flex');
+            
+            void envelopeView.offsetWidth; 
+
+            envelopeView.style.opacity = '1';
+            
+            envelopeWrapper.classList.add('hover:scale-[1.03]');
+            envelopeWrapper.classList.remove('scale-[1.05]', 'pointer-events-none');
+            
+            flap.style.transform = 'rotateX(0deg)';
+            waxSeal.style.opacity = '1';
+            
+            letter.classList.replace('-translate-y-[110%]', 'translate-y-0');
+            letter.classList.remove('scale-110');
+            
+            tapText.classList.replace('opacity-0', 'opacity-100');
+            
+            window.scrollTo(0, 0);
+        }
+
+        // Countdown Logic
+        function updateTimer() {
+            const targetDate = new Date("2026-09-04T20:00:00").getTime();
+            const now = new Date().getTime();
+            const difference = targetDate - now;
+
+            if (difference > 0) {
+                const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((difference / (1000 * 60 * 60)) % 24);
+                const mins = Math.floor((difference / 1000 / 60) % 60);
+                const secs = Math.floor((difference / 1000) % 60);
+
+                document.getElementById('timer-days').innerText = days.toString().padStart(2, '0');
+                document.getElementById('timer-hours').innerText = hours.toString().padStart(2, '0');
+                document.getElementById('timer-mins').innerText = mins.toString().padStart(2, '0');
+                document.getElementById('timer-secs').innerText = secs.toString().padStart(2, '0');
+            }
+        }
+
+        updateTimer();
+        setInterval(updateTimer, 1000);
+
+        // Custom Modal Logic
+        const modal = document.getElementById('custom-modal');
+        const modalContent = document.getElementById('modal-content');
+        const form = document.getElementById('rsvp-form');
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            
+            requestAnimationFrame(() => {
+                modal.classList.remove('opacity-0');
+                modalContent.classList.remove('scale-95');
+                modalContent.classList.add('scale-100');
+            });
+            
+            form.reset();
+        });
+
+        function closeModal() {
+            modal.classList.add('opacity-0');
+            modalContent.classList.remove('scale-100');
+            modalContent.classList.add('scale-95');
+            
+            setTimeout(() => {
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+            }, 300);
+        }
+    </script>
+</body>
+</html>
